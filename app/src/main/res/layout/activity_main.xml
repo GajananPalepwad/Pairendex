@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="978dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435"
+        app:srcCompat="@drawable/android_large___1" />
+
+    <ImageView
+        android:id="@+id/imagehelp"
+        android:layout_width="157dp"
+        android:layout_height="152dp"
+        android:layout_marginBottom="236dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toEndOf="@+id/imageplay"
+        app:srcCompat="@drawable/component_1_min" />
+
+    <ImageView
+        android:id="@+id/imageplay"
+        android:layout_width="159dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="236dp"
+        android:onClick="gotoplaypage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/component_2_min" />
+
+    <ImageView
+        android:id="@+id/imagescore"
+        android:layout_width="163dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageplay"
+        app:layout_constraintVertical_bias="0.506"
+        app:srcCompat="@drawable/component_4_min" />
+
+    <ImageView
+        android:id="@+id/imagesetting"
+        android:layout_width="158dp"
+        android:layout_height="159dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toEndOf="@+id/imagescore"
+        app:layout_constraintTop_toBottomOf="@+id/imagehelp"
+        app:layout_constraintVertical_bias="0.518"
+        app:srcCompat="@drawable/component_3_min" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="356dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pairendex_min" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
