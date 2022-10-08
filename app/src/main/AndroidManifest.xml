@@ -17,6 +17,9 @@
             android:name=".GamePlay"
             android:exported="false" />
         <activity
+            android:name=".GamePlay"
+            android:exported="false" />
+        <activity
             android:name=".PlayOption"
             android:exported="false" />
         <activity
