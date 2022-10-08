@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamePlay">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="978dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435"
+        app:srcCompat="@drawable/android_large___1" />
+
+    <ImageView
+        android:id="@+id/backspace"
+        android:layout_width="92dp"
+        android:layout_height="49dp"
+        android:onClick="gotobackplayoption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/component_8_min" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView32"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView41"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView42"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView43"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView44"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView45"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView51"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView52"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView53"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView54"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView55"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView61"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView62"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView63"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView64"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView65"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView71"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView72"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView73"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView74"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView75"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView81"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView82"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView83"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView84"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+
+            <ImageView
+                android:id="@+id/imageView85"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/card_min" />
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

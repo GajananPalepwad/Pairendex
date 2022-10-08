@@ -17,4 +17,9 @@ public class PlayOption extends AppCompatActivity {
         Intent intent = new Intent(PlayOption.this,MainActivity.class);
         startActivity(intent);
     }
+
+    public void gotoplayoffline(View view){
+        Intent intent = new Intent(PlayOption.this,GamePlay.class);
+        startActivity(intent);
+    }
 }
