@@ -18,10 +18,4 @@ public class GamePlay extends AppCompatActivity {
         setContentView(R.layout.activity_game_play);
     }
 
-
-    public void gotobackplayoption(View view){
-        Intent intent = new Intent(GamePlay.this,PlayOption.class);
-        startActivity(intent);
-    }
-
 }

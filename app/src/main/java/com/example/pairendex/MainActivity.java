@@ -17,4 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this,PlayOption.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }

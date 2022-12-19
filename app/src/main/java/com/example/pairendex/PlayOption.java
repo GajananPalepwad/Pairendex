@@ -13,10 +13,6 @@ public class PlayOption extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_option);
     }
-    public void gotomainmenu(View view){
-        Intent intent = new Intent(PlayOption.this,MainActivity.class);
-        startActivity(intent);
-    }
 
     public void gotoplayoffline(View view){
         Intent intent = new Intent(PlayOption.this,GamePlay.class);
