@@ -23,7 +23,6 @@ public class Flash_Screen extends AppCompatActivity {
                 } finally {
                     Intent intent = new Intent(Flash_Screen.this,MainActivity.class);
                     startActivity(intent);
-
                 }
             }
         };thread.start();
