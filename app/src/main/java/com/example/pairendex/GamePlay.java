@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.SystemClock;
 import android.view.View;
 
 import android.os.Bundle;
@@ -22,15 +23,12 @@ import java.util.Locale;
 
 public class GamePlay extends AppCompatActivity {
     ImageView i11, i12, i13, i14, i15, i21, i22, i23, i24, i25, i31, i32, i33, i34, i35, i41, i42, i43, i44, i45, i51, i52, i53, i54, i55, i61, i62, i63, i64, i65, i71, i72, i73, i74, i75, i81, i82, i83, i84, i85;
-    TextView t1, t2;
     Integer[] cardArray = {101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220};
-                        int i101, i102, i103, i104, i105, i106, i107, i108, i109, i110, i111, i112, i113, i114, i115, i116, i117, i118, i119, i120, i201, i202, i203, i204, i205, i206, i207, i208, i209, i210, i211, i212, i213, i214, i215, i216, i217, i218, i219, i220;
-
+    int i101, i102, i103, i104, i105, i106, i107, i108, i109, i110, i111, i112, i113, i114, i115, i116, i117, i118, i119, i120, i201, i202, i203, i204, i205, i206, i207, i208, i209, i210, i211, i212, i213, i214, i215, i216, i217, i218, i219, i220;
     int firstCard, secondCard;
     int clickedFirst, clickedSecond;
     int cardNumber = 1;
-
-
+    ImageView submit;
 
 
     private int sec = 0;
@@ -44,6 +42,7 @@ public class GamePlay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_play);
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         if (savedInstanceState != null)
         {
@@ -102,7 +101,7 @@ public class GamePlay extends AppCompatActivity {
     private void startTimer()
     {
         final TextView timer = (TextView)findViewById(R.id.timer);
-
+        final TextView timer1 = (TextView)findViewById(R.id.timer1);
         final Handler hd = new Handler();
 
         hd.post(new Runnable() {
@@ -110,15 +109,14 @@ public class GamePlay extends AppCompatActivity {
 
             public void run()
             {
-                int hours_var = sec / 3600;
                 int minutes_var = (sec % 3600) / 60;
                 int secs_var = sec % 60;
 
                 String time_value = String.format(Locale.getDefault(),
-                        "%d:%02d:%02d", hours_var, minutes_var, secs_var);
+                        "%02d:%02d", minutes_var, secs_var);
 
                 timer.setText(time_value);
-
+                timer1.setText(time_value);
                 if (isRunning)
                 {
                     sec++;
@@ -128,30 +126,7 @@ public class GamePlay extends AppCompatActivity {
             }
         });
         Start();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
                 i11 = findViewById(R.id.imageView11);
                 i12 = findViewById(R.id.imageView12);
@@ -214,8 +189,8 @@ public class GamePlay extends AppCompatActivity {
             i41.setTag(15);
             i42.setTag(16);
             i43.setTag(17);
-            i44.setTag(19);
-            i45.setTag(18);
+            i44.setTag(18);
+            i45.setTag(19);
             i51.setTag(20);
             i52.setTag(21);
             i53.setTag(22);
@@ -623,7 +598,7 @@ public class GamePlay extends AppCompatActivity {
         } else if(cardArray[card] == 107){
             iv.setImageResource(i107);
         }else if(cardArray[card] == 108){
-            iv.setImageResource(i107);
+            iv.setImageResource(i108);
         }else if(cardArray[card] == 109){
             iv.setImageResource(i109);
         }else if(cardArray[card] == 110){
@@ -1012,8 +987,8 @@ public class GamePlay extends AppCompatActivity {
         i83.setEnabled(true);
         i84.setEnabled(true);
         i85.setEnabled(true);
-
-        //checkEnd();
+//////////////////////////////////////////////////////////////////
+        checkEnd();
     }
 
     private void checkEnd(){
@@ -1057,62 +1032,63 @@ public class GamePlay extends AppCompatActivity {
                 i82.getVisibility() == View.INVISIBLE &&
                 i83.getVisibility() == View.INVISIBLE &&
                 i84.getVisibility() == View.INVISIBLE &&
-                i85.getVisibility() == View.INVISIBLE){
-
+                i85.getVisibility() == View.INVISIBLE){///////////////////////
             Stop();
-
+            ImageView gameover = findViewById(R.id.gameover);
+            gameover.setImageResource(R.drawable.game_over);
+            submit = findViewById(R.id.SUBMIT);
+            submit.setImageResource(R.drawable.card);
+            submit.setEnabled(true);
         }
 
-
-
-
     }
 
+
+    public void btnsubmit(View view){
+        //code will be here
+    }
     private void frontOfCardResources(){
-        i101 = R.drawable.component_15;
-                i102= R.drawable.component_16;
+        i101= R.drawable.component_15;
+        i102= R.drawable.component_16;
         i103= R.drawable.component_17;
-                i104= R.drawable.component_18;
+        i104= R.drawable.component_18;
         i105= R.drawable.component_19;
-                i106= R.drawable.component_20;
+        i106= R.drawable.component_20;
         i107= R.drawable.component_21;
-                i108= R.drawable.component_22;
+        i108= R.drawable.component_22;
         i109= R.drawable.component_23;
-                i110= R.drawable.component_24;
+        i110= R.drawable.component_24;
         i111= R.drawable.component_25;
-                i112= R.drawable.component_26;
+        i112= R.drawable.component_26;
         i113= R.drawable.component_27;
-                i114= R.drawable.component_28;
+        i114= R.drawable.component_28;
         i115= R.drawable.component_29;
-                i116= R.drawable.component_30;
+        i116= R.drawable.component_30;
         i117= R.drawable.component_31;
-                i118= R.drawable.component_32;
+        i118= R.drawable.component_32;
         i119= R.drawable.component_33;
-                i120= R.drawable.component_34;
+        i120= R.drawable.component_34;
         i201= R.drawable.component_15___copy;
-                i202= R.drawable.component_16___copy;
+        i202= R.drawable.component_16___copy;
         i203= R.drawable.component_17___copy;
-                i204= R.drawable.component_18___copy;
+        i204= R.drawable.component_18___copy;
         i205= R.drawable.component_19___copy;
-                i206= R.drawable.component_20___copy;
+        i206= R.drawable.component_20___copy;
         i207= R.drawable.component_21___copy;
-                i208= R.drawable.component_22___copy;
+        i208= R.drawable.component_22___copy;
         i209= R.drawable.component_23___copy;
-                i210= R.drawable.component_24___copy;
+        i210= R.drawable.component_24___copy;
         i211= R.drawable.component_25___copy;
-                 i212= R.drawable.component_26___copy;
-                 i213= R.drawable.component_27___copy;
+        i212= R.drawable.component_26___copy;
+        i213= R.drawable.component_27___copy;
         i214= R.drawable.component_28___copy;
-        i215 = R.drawable.component_29___copy;
-                i216= R.drawable.component_30___copy;
+        i215= R.drawable.component_29___copy;
+        i216= R.drawable.component_30___copy;
         i217= R.drawable.component_31___copy;
-                i218= R.drawable.component_32___copy;
+        i218= R.drawable.component_32___copy;
         i219= R.drawable.component_33___copy;
-                i220= R.drawable.component_34___copy;
-
-
+        i220= R.drawable.component_34___copy;
 
     }
-
 
 }
