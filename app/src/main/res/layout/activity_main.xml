@@ -61,6 +61,7 @@
                     android:layout_height="156dp"
                     android:layout_marginRight="4dp"
                     android:layout_weight="1"
+                    android:onClick="gotoleaderboard"
                     app:srcCompat="@drawable/component_4_min" />
             </TableRow>
 

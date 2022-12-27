@@ -18,8 +18,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    @Override
-    public void onBackPressed() {
-
+    public void gotoleaderboard(View view){
+        Intent intent = new Intent(MainActivity.this,LeaderBoard.class);
+        startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed() {}
 }
