@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "240767610625",
+    "project_id": "pairendex",
+    "storage_bucket": "pairendex.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240767610625:android:1082bc98b23726a597f500",
+        "android_client_info": {
+          "package_name": "com.example.pairendex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240767610625-fh28kgnfc2vf3ectkrjlukkj46ir9e86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0OF8ZyJOIZCqy2HcfkoFNwDKsTfjBfW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240767610625-fh28kgnfc2vf3ectkrjlukkj46ir9e86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

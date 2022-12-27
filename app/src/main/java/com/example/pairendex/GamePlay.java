@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -12,6 +13,7 @@ import android.os.SystemClock;
 import android.view.View;
 
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,7 +30,7 @@ public class GamePlay extends AppCompatActivity {
     int firstCard, secondCard;
     int clickedFirst, clickedSecond;
     int cardNumber = 1;
-    ImageView submit;
+
 
 
     private int sec = 0;
@@ -41,6 +43,7 @@ public class GamePlay extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_play);
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -582,6 +585,8 @@ public class GamePlay extends AppCompatActivity {
     }
 
     private void doStuff(ImageView iv, int card){
+        final MediaPlayer mediaPlayer = MediaPlayer.create( this,R.raw.music);
+        mediaPlayer.start();
 
         if(cardArray[card] == 101){
             iv.setImageResource(i101);
@@ -1036,17 +1041,15 @@ public class GamePlay extends AppCompatActivity {
             Stop();
             ImageView gameover = findViewById(R.id.gameover);
             gameover.setImageResource(R.drawable.game_over);
-            submit = findViewById(R.id.SUBMIT);
-            submit.setImageResource(R.drawable.card);
-            submit.setEnabled(true);
+
+
+
         }
 
     }
 
 
-    public void btnsubmit(View view){
-        //code will be here
-    }
+
     private void frontOfCardResources(){
         i101= R.drawable.component_15;
         i102= R.drawable.component_16;
