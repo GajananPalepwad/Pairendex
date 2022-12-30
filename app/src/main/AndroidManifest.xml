@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.pairendex">
+    package="com.first.pairendex">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -14,26 +16,26 @@
         android:theme="@style/Theme.Pairendex"
         tools:targetApi="31">
         <activity
-            android:name=".Settings"
+            android:name="com.first.pairendex.Settings"
             android:exported="false" />
         <activity
-            android:name=".Help"
+            android:name="com.first.pairendex.Help"
             android:exported="false" />
         <activity
-            android:name=".LeaderBoard"
+            android:name="com.first.pairendex.LeaderBoard"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.first.pairendex.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".GamePlay"
+            android:name="com.first.pairendex.GamePlay"
             android:exported="false" />
         <activity
-            android:name=".GamePlay"
+            android:name="com.first.pairendex.GamePlay"
             android:exported="false"
             tools:ignore="DuplicateActivity" />
         <activity
-            android:name=".Flash_Screen"
+            android:name="com.first.pairendex.Flash_Screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,6 +43,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4468160887945536~4215048384"/>
     </application>
 
 </manifest>

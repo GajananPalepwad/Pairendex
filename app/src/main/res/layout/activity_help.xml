@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:foreground="@drawable/leaderboard"
-    tools:context=".Help">
+    tools:context="com.first.pairendex.Help">
+
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -17,6 +19,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.502"
-        app:srcCompat="@drawable/android_large___1" />
+        app:srcCompat="@drawable/android_large___1"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-4468160887945536~4215048384"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

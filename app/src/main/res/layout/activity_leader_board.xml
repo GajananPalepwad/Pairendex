@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LeaderBoard">
+    tools:context="com.first.pairendex.LeaderBoard">
 
     <ImageView
         android:id="@+id/imageView"
@@ -100,7 +100,162 @@
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
             app:srcCompat="@drawable/component_9" />
+
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="126dp">
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:shadowColor="#AB10D5"
+            android:shadowRadius="10"
+            android:text=""
+            android:textColor="@color/purple_500"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textVicfhew2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:shadowColor="#AB10D5"
+            android:shadowRadius="10"
+            android:text="1. GN4k        00:58"
+            android:textColor="@color/purple_500"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gtextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:shadowColor="#AB10D5"
+            android:shadowRadius="10"
+            android:text="2. Sanu         01:24"
+            android:textColor="@color/purple_500"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textVieggw2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="18dp"
+            android:shadowColor="#AB10D5"
+            android:shadowRadius="10"
+            android:text="3. Yuvi           01:38"
+            android:textColor="@color/purple_500"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViehhw2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="18dp"
+            android:shadowColor="#AB10D5"
+            android:shadowRadius="10"
+            android:text="4. Roshan     01:53"
+            android:textColor="@color/purple_500"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/texsstView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="18dp"
+            android:shadowColor="#AB10D5"
+            android:shadowRadius="10"
+            android:text="5. Sushil       01:59"
+            android:textColor="@color/purple_500"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViccew2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="19dp"
+            android:shadowColor="#AB10D5"
+            android:shadowRadius="10"
+            android:text="6. Isha          02:08"
+            android:textColor="@color/purple_500"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViqwwew2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="18dp"
+            android:shadowColor="#AB10D5"
+            android:shadowRadius="10"
+            android:text="7. Swejal      02:09"
+            android:textColor="@color/purple_500"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="19dp"
+            android:shadowColor="#AB10D5"
+            android:shadowRadius="10"
+            android:text="8. Om            02:15"
+            android:textColor="@color/purple_500"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textVw2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="18dp"
+            android:shadowColor="#AB10D5"
+            android:shadowRadius="10"
+            android:text="9. Saigenix  02:28"
+            android:textColor="@color/purple_500"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/texView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="17dp"
+            android:shadowColor="#AB10D5"
+            android:shadowRadius="10"
+            android:text="10. Avenger  02:51"
+            android:textColor="@color/purple_500"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
